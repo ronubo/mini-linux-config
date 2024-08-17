@@ -6,8 +6,8 @@ exit 1
 fi
 
 
-KERNEL_SRC=/home/ron/kernel/linux-5.6-rc7
-KERNEL_OUT=$PWD
+: ${KERNEL_SRC=/home/ron/kernel/linux}
+: ${KERNEL_OUT=$PWD}
 diffconfig=${KERNEL_SRC}/scripts/diffconfig
 
 if [ $# == 1 ] ; then
